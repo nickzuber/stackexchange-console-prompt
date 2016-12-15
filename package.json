@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
+    "jsdom": "^9.8.3",
+    "x-ray": "^2.3.1"
+  },
+  "name": "stackexchange-console-prompt",
+  "version": "1.0.0",
+  "description": "Display a random questions from the daily Stack Exchange hot questions in your terminal.",
+  "main": "prompt.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node prompt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nickzuber/stackexchange-console-prompt.git"
+  },
+  "author": "Nick Zuber <zuber.nicholas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickzuber/stackexchange-console-prompt/issues"
+  },
+  "homepage": "https://github.com/nickzuber/stackexchange-console-prompt#readme"
+}
