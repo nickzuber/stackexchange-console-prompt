@@ -1,3 +1,7 @@
+<center>
+	<img src="assets/example.png" />
+</center>
+
 # Stack Exchange Hot Questions Console Prompt
 
 This is just a simple script that will print a random question from the [Stack Exchange](http://stackexchange.com/) daily Hot Questions in your terminal. Simply set up your `.bash_profile`, `.bashrc`, `.zshrc`, or whatever you kids are using these days.
