@@ -1,14 +1,27 @@
 # Stack Exchange Hot Questions Console Prompt
 
-This is just a simple script that will print a random question from Stack Exchange's daily Hot Questions in your terminal. Simply set up your `.bash_profile`, `.bashrc`, `.zshrc`, or whatever you kids are using these days.
+This is just a simple script that will print a random question from the [Stack Exchange](http://stackexchange.com/) daily Hot Questions in your terminal. Simply set up your `.bash_profile`, `.bashrc`, `.zshrc`, or whatever you kids are using these days.
 
 ## How to Set Up
 
-First, clone this repository to your local machine:
+First, clone and set up this repository to your local machine:
 
 ```
 $ git clone git@github.com:nickzuber/stackexchange-console-prompt.git
+$ yarn install
 ```
+
+Then, set this script up to run whenever you open a new terminal session:
+
+```bash
+
+# Execute the repository from where ever you cloned it
+# In this example, the repository lives on the root
+node ~/prompt
+
+```
+
+And that's it! Now every time your terminal window opens, you should receive a good ol' fashion community q.
 
 ## How Does This Work?
 
