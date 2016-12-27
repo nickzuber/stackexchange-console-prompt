@@ -57,11 +57,11 @@ function getTimeMessage (timeInMilliseconds) {
 function printRandomQuestionFromFile (json) {
   const rand = getRandomArbitrary(0, json.questions.length);
   const randomQuestion = json.questions[rand];
-  console.log(colors.gray(`Question ${rand} out of ${json.questions.length} — Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`))
-  console.log(colors.blue.bold(randomQuestion.title)
+  console.log(colors.red(`Question ${rand} out of ${json.questions.length} — Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`))
+  console.log(colors.green.bold('📚  ' + randomQuestion.title)
             + colors.yellow(' — '+randomQuestion.group) + '\n'
             + colors.gray('chrome ')
-            + colors.gray.underline(randomQuestion.link));
+            + colors.blue.underline(randomQuestion.link));
 }
 
 function rehydrateHotQuestions () {
