@@ -21,8 +21,8 @@ fs.readFile(FILE_WITH_DATA, 'utf8', function (err, data) {
 
   // If we haven't refreshed in over a day
   if (currentDate - json.timestamp > MILLISECONDS_IN_A_DAY) {
-    console.log(colors.red(`Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`));
-    console.log(colors.red('Fetching new questions...'));
+    // console.log(colors.red(`Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`));
+    console.log(colors.black('Fetching new questions...'));
     rehydrateHotQuestions();
     return;
   }
@@ -57,7 +57,7 @@ function getTimeMessage (timeInMilliseconds) {
 function printRandomQuestionFromFile (json) {
   const rand = getRandomArbitrary(0, json.questions.length);
   const randomQuestion = json.questions[rand];
-  console.log(colors.red(`Question ${rand} out of ${json.questions.length} — Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`))
+  console.log(colors.black(`Question ${rand} out of ${json.questions.length} — Last updated ${getTimeMessage(currentDate - json.timestamp)} ago.`))
   console.log(colors.green.bold('📚  ' + randomQuestion.title)
             + colors.yellow(' — '+randomQuestion.group) + '\n'
             + colors.gray('chrome ')
